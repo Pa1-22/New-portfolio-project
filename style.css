@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212; /* Dark black background */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: black; /* Green background */
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #d8ffd6; /* Light green for tagline */
+    margin-top: 10px;
+}
+
+/* Introduction Section */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark gray for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Styling */
+.intro-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Light text */
+    margin-bottom: 20px;
+}
+
+.intro-text .btn {
+    display: inline-block;
+    background-color: #1db954; /* Green button */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro-text .btn:hover {
+    background-color: black; /* Darker green on hover */
+}
+
+/* Image Styling */
+.intro-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-image img {
+        max-width: 180px;
+    }
+}
